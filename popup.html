@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            width: 300px;
+        }
+
+        .start-button {
+            padding: 10px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #a75aff;
+            color: #fffcfc;
+            font-weight: 900;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .initial-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .initial-screen>h1 {
+            color: #464646;
+            margin: 20px 0;
+        }
+
+        .participants-container {
+            display: grid;
+            grid: auto / repeat(3, 150px);
+            grid-gap: 40px 20px;
+            margin-top: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .participant {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .participant>img {
+            border-radius: 25px;
+            width: 50px;
+            height: 50px
+        }
+
+        .participant>p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #1b0c0c;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="initial-screen">
+        <h1>Who has spoken</h1>
+
+        <main>
+            <button id="start" class="start-button">Start</button>
+        </main>
+    </div>
+
+    <!-- <div id="participants-container" class="participants-container">
+
+    </div> -->
+    <button id="start"></button>
+    <script src="popup.js"></script>
+</body>
+
+</html>
